@@ -15,12 +15,15 @@ function DigitalPal(){
     }; // feed()
 
     this.sleep = () => {
-        if(this.hungry === true) {
-            console.log('That was yummy!');
+        if(this.sleepy === true) {
+            console.log('Zzzzzzzz');
+            this.sleepy = false;
+            this.bored = true;
+            increaseAge();
         } else {
-            console.log('No thanks! I\'m full')
+            console.log('No way! I\'m not tired.');
         }
     }; // sleep()
 
 
-};
+}; // DigitalPal()
