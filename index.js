@@ -88,3 +88,5 @@ function DigitalPal(){
 
 const dog = new DigitalPal();
 const cat = new DigitalPal();
+
+module.exports = DigitalPal
