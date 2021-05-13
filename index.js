@@ -1,3 +1,4 @@
+const { allowedNodeEnvironmentFlags } = require("process");
 const { PassThrough } = require("stream");
 const { Z_FULL_FLUSH } = require("zlib");
 
@@ -14,7 +15,7 @@ function DigitalPal(){
         } else {
             console.log('No thanks! I\'m full')
         }
-    }; // feed()
+    }; // feed
 
     this.sleep = () => {
         if(this.sleepy === true) {
@@ -77,16 +78,21 @@ function DigitalPal(){
         }
 
         return
-    }; // destroyFurniture()
+    }; // destroyFurniture
 
     this.buyNewFurniture = () => {
         this.houseCondition + 50;
         console.log('Are you sure about that?')
-    }; // buyNewFurniture()
+    }; // buyNewFurniture
 
-}; // DigitalPal()
+}; // DigitalPal
 
-const dog = new DigitalPal();
-const cat = new DigitalPal();
+const animals = {};
 
-module.exports = DigitalPal
+animals.dog = new DigitalPal();
+animals.cat = new DigitalPal();
+
+const animal = process.argv[2];
+const method = process.argv[3];
+
+animals.animal.method()
