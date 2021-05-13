@@ -1,5 +1,5 @@
 # tamagotchi
 
-## A digital pal app you can raise and feed
+## A retro digital pal app
 
 ### 🚧 in development 🚧
