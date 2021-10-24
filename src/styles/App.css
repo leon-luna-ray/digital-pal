@@ -5,6 +5,10 @@ body.dark-mode {
 .dark-mode-btn:hover {
   cursor: pointer;
 }
-#digital-pal {
+.icon {
   font-size: 10rem;
+}
+
+.controls {
+  margin: 2rem;
 }
