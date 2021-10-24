@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Button } from 'react-bootstrap';
+import { Container, Button, Col, Row } from 'react-bootstrap';
 import DarkModeBtn from './DarkModeBtn';
 
 const DigitalPal = () => {
@@ -13,54 +13,110 @@ const DigitalPal = () => {
   const [isSleepy, setIsSleepy] = useState(false);
   const [houseCondition, setHouseCondition] = useState(100);
   // Each method will change the state and display a message for 3 seconds
+
+  const reset = () => {
+    setTimeout(() => {
+      setIcon('');
+      setDigitalPal('👾');
+      setMessage('');
+    }, 2000);
+  };
+
   const feed = () => {
     if (isHungry) {
       setIcon('🍒');
       setMessage('Mmmmm! That was yummy!');
       setIsHungry(false);
-      setTimeout(() => {
-        setIcon('');
-        setMessage('');
-      }, 2000);
+      reset();
     } else {
       setIcon('🚫');
+      setDigitalPal('');
       setMessage("No thanks! I'm full");
       setIsHungry(true);
-      setTimeout(() => {
-        setIcon('');
-
-        setMessage('');
-      }, 2000);
+      reset();
     }
   };
   const play = () => {
     if (isBored) {
+      setIcon('🎾');
       setMessage("yay! Let's play!");
       setIsBored(false);
       setIsHungry(true);
-      setTimeout(() => {
-        setMessage('');
-      }, 2000);
+      reset();
     } else {
+      setIcon('🚫');
+      setDigitalPal('');
       setMessage("I don't wanna!");
       setIsBored(true);
-      setTimeout(() => {
-        setMessage('');
-      }, 2000);
+      reset();
     }
   };
 
-  console.log(isBored);
+  const sleep = () => {
+    if (isSleepy) {
+      setIcon('🌙');
+      setMessage('Nite nite ...zzzzz');
+      setIsSleepy(false);
+      setIsHungry(true);
+      reset();
+    } else {
+      setIcon('🚫');
+      setDigitalPal('');
+      setMessage("I'm not tired!");
+      reset();
+    }
+  };
+
+  const goInside = () => {
+    setIcon('🏡');
+    setMessage("Okay I'm tired...");
+    setIsSleepy(true);
+    setIsOutside(false);
+    reset();
+  };
+
+  const goOutside = () => {
+    setIcon('☀️');
+    setMessage('Yay! I wanna play outside!');
+    setIsOutside(true);
+    reset();
+  };
+
+  const commands = [
+    { name: 'feed', color: 'btn-danger', function: feed },
+    { name: 'play', color: 'btn-warning', function: play },
+    { name: 'sleep', color: 'btn-primary', function: sleep },
+    {
+      name: isOutside ? 'go inside' : 'go outside',
+      color: 'btn-success',
+      function: isOutside ? goInside : goOutside,
+    },
+  ];
+
+  const commandBtns = commands.map((command, index) => {
+    return (
+      <Col key={index} md={6} lg={3}>
+        <Button
+          key={index}
+          className={`command-btn text-uppercase ${command.color}`}
+          onClick={command.function}
+        >
+          {command.name}
+        </Button>
+      </Col>
+    );
+  });
+
   return (
     <Container>
-      <nav className='d-flex justify-content-end'>
-        <DarkModeBtn />
-      </nav>
+      <Row>
+        <nav className='d-flex justify-content-end'>
+          <DarkModeBtn />
+        </nav>
+      </Row>
       <main className='text-center'>
-        <h1>Digital Pal</h1>
-        <div className='controls'>
-          <Button onClick={feed}>Feed</Button>
-        </div>
+        <h1 className='digital-pal-title'>Digital Pal</h1>
+        <Row className='controls'>{commandBtns}</Row>
         <span id='action-icon' className='icon'>
           {icon}
         </span>
@@ -69,9 +125,6 @@ const DigitalPal = () => {
         </span>
         <br />
         <h2>{message}</h2>
-        <br />
-        <br />
-        <br />
       </main>
     </Container>
   );
