@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/leon-luna-ray/digital-pal/static/css/main.01352f23.chunk.css",
+    "main.js": "/leon-luna-ray/digital-pal/static/js/main.7efc1ed7.chunk.js",
+    "main.js.map": "/leon-luna-ray/digital-pal/static/js/main.7efc1ed7.chunk.js.map",
+    "runtime-main.js": "/leon-luna-ray/digital-pal/static/js/runtime-main.2e8f2c02.js",
+    "runtime-main.js.map": "/leon-luna-ray/digital-pal/static/js/runtime-main.2e8f2c02.js.map",
+    "static/js/2.4b2d6048.chunk.js": "/leon-luna-ray/digital-pal/static/js/2.4b2d6048.chunk.js",
+    "static/js/2.4b2d6048.chunk.js.map": "/leon-luna-ray/digital-pal/static/js/2.4b2d6048.chunk.js.map",
+    "index.html": "/leon-luna-ray/digital-pal/index.html",
+    "static/css/main.01352f23.chunk.css.map": "/leon-luna-ray/digital-pal/static/css/main.01352f23.chunk.css.map",
+    "static/js/2.4b2d6048.chunk.js.LICENSE.txt": "/leon-luna-ray/digital-pal/static/js/2.4b2d6048.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e8f2c02.js",
+    "static/js/2.4b2d6048.chunk.js",
+    "static/css/main.01352f23.chunk.css",
+    "static/js/main.7efc1ed7.chunk.js"
+  ]
+}
