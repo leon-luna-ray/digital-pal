@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.01352f23.chunk.css",
-    "main.js": "/static/js/main.7efc1ed7.chunk.js",
-    "main.js.map": "/static/js/main.7efc1ed7.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a4138aec.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a4138aec.js.map",
-    "static/js/2.4b2d6048.chunk.js": "/static/js/2.4b2d6048.chunk.js",
-    "static/js/2.4b2d6048.chunk.js.map": "/static/js/2.4b2d6048.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.01352f23.chunk.css.map": "/static/css/main.01352f23.chunk.css.map",
-    "static/js/2.4b2d6048.chunk.js.LICENSE.txt": "/static/js/2.4b2d6048.chunk.js.LICENSE.txt"
+    "main.css": "/digital-pal/static/css/main.01352f23.chunk.css",
+    "main.js": "/digital-pal/static/js/main.7efc1ed7.chunk.js",
+    "main.js.map": "/digital-pal/static/js/main.7efc1ed7.chunk.js.map",
+    "runtime-main.js": "/digital-pal/static/js/runtime-main.64055f68.js",
+    "runtime-main.js.map": "/digital-pal/static/js/runtime-main.64055f68.js.map",
+    "static/js/2.4b2d6048.chunk.js": "/digital-pal/static/js/2.4b2d6048.chunk.js",
+    "static/js/2.4b2d6048.chunk.js.map": "/digital-pal/static/js/2.4b2d6048.chunk.js.map",
+    "index.html": "/digital-pal/index.html",
+    "static/css/main.01352f23.chunk.css.map": "/digital-pal/static/css/main.01352f23.chunk.css.map",
+    "static/js/2.4b2d6048.chunk.js.LICENSE.txt": "/digital-pal/static/js/2.4b2d6048.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a4138aec.js",
+    "static/js/runtime-main.64055f68.js",
     "static/js/2.4b2d6048.chunk.js",
     "static/css/main.01352f23.chunk.css",
     "static/js/main.7efc1ed7.chunk.js"
