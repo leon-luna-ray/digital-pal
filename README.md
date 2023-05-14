@@ -16,17 +16,18 @@ This is a retro digital-pet app from the 90's! Feed your pet or take it outside!
 - [Contact](#contact)
 - [Links](#links)
 
+## Technologies
+
+- React.js
+- Vite.js
+- Javascript
+- HTML
+- CSS
+- Bootstrap
+
 ## Image
 
 ![Screenshot](./assets/digital-pal.png)
-
-## Technologies
-
-- HTML
-- CSS
-- Javascript
-- React.js
-- Bootstrap
 
 ## Known-Bugs
 
