@@ -4,7 +4,7 @@
 
 This is a retro digital-pet app from the 90's! Feed your pet or take it outside!
 
-[🚀 https://digital-pal-rldev.netlify.app/](https://digital-pal-rldev.netlify.app/)
+[🚀 https://digital-pal.netlify.app/](https://digital-pal.netlify.app/)
 
 ## Table of Contents
 
@@ -56,6 +56,6 @@ If you have any questions about the repo, open an issue or contact me directly a
 
 ## Links
 
-- [Deployed Project](https://digital-pal-rldev.netlify.app/)
+- [Deployed Project](https://digital-pal.netlify.app/)
 
 - [Project Repository](https://github.com/leon-luna-ray/digital-pal)
